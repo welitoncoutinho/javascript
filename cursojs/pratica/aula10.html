@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Sistema de Localização</h1>
+    <input type="text" name="txpais" id="txpais">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="info">
+
+    </div>
+    <script>
+        function verificar() {
+            var pais = window.document.getElementById('txpais')
+
+            var i = window.document.querySelector('div#info')
+            var tpais = String(pais.value)
+            if (tpais != 'Brasil') {
+                i.innerHTML = `Você é <strong>estrageiro</strong>`
+            } else {
+                i.innerHTML = `Você é <strong>brasileiro</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
