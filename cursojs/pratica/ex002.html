@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex002</title>
+</head>
+<body>
+    <label for="tnome">Qual o seu nome?</label>
+    <input type="text" name="tnome" id="tnome">
+    <input type="button" value="Olá"  id="msg" onclick="men()">
+    <p id="res">msg</p>
+
+    <script>
+        function men() {
+            var nome = window.document.getElementById('tnome')
+            var r = window.document.getElementById('res')
+            var nome = String(nome.value)
+            r.innerHTML = `Olá ${nome}, é um prazer te conhecer!`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex003</title>
+</head>
+<body>
+    <h1>Pagamento de salario</h1>
+    <label for="tnf">Nome do funcionario:</label>
+    <input type="text" name="tnf" id="tnf">
+    <br>
+    <label for="tsf">Salario:</label>
+    <input type="number" name="tsf" id="tsf">
+    <br>
+    <button onclick="verificar()">Enviar</button>
+
+    <p id="res"></p>
+    
+    <script>
+        function verificar() {
+            var nf = window.document.getElementById('tnf')
+            var sf = window.document.getElementById('tsf')
+            var r = window.document.getElementById('res')
+            var data = new Date()
+            var mes = data.getMonth()
+            var nf = String(nf.value)
+            var sf = Number(sf.value)
+            switch (mes){
+                case 0 :
+                    mes = 'Janeiro'
+                    break
+                case 1 : 
+                    mes = 'Feverero'
+                    break
+                case 2 : 
+                    mes = 'Março'
+                    break
+                case 3 : 
+                    mes = 'Abril'
+                    break
+                case 4 : 
+                    mes = 'Maio'
+                    break
+                case 5 : 
+                    mes = 'Junho'
+                    break
+                case 6 : 
+                    mes = 'Julho'
+                    break
+                case 7 : 
+                    mes = 'Agosto'
+                    break
+                case 8 : 
+                    mes = 'Setembro'
+                    break
+                case 9 : 
+                    mes = 'Outubro'
+                    break
+                case 10 : 
+                    mes = 'Novenbro'
+                    break
+                case 11 : 
+                    mes = 'Dezembro'
+                    break
+            }
+            r.innerHTML = `O funcionário ${nf} tem um salário de ${sf} em ${mes}.`
+        }
+    </script>
+</body>
+</html>

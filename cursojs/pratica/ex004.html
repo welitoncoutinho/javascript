@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex004</title>
+</head>
+<body>
+    <h1>Somatorio</h1>
+    <label for="n1">Forneça o primeiro numero:</label>
+    <input type="number" name="n1" id="n1">
+    <br>
+    <label for="n2">Forneça o segundo numero:</label>
+    <input type="number" name="2" id="n2">
+    <p id="re"></p>
+    <button onclick="somar()">Somar</button>
+    <script>
+        function somar(){
+            var nu1 = window.document.getElementById('n1')
+            var nu2 = window.document.getElementById('n2')
+            var r = window.document.getElementById('re')
+            nu1 = Number(nu1.value)
+            nu2 = Number(nu2.value)
+            var s = nu1 + nu2
+            r.innerHTML = `A soma entre ${nu1} e ${nu2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>

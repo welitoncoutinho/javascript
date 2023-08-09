@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo do livro</title>
+</head>
+<body>
+    <h1>Praticondo exeplo do livro</h1>
+    <p onclick="moveon()">aa</p>
+    <script>
+        function moveon(){
+            var answer = confirm("Ready to move on?")
+            if (answer) window.location = "http://google.com"
+            setTimeout(moveon, 60000)
+        }
+    </script>
+</body>
+</html>
