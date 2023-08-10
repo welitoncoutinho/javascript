@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(52, 54, 197, 0.808);
+}
+
+body, main {
+    width: 100vw;
+    height: 100vh;
+}
+
+main > h1 {
+    margin: 15px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+    text-align: center;
+    color: white;
+}
+
+section {
+    width: 55vw;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.39);
+    font-size: 1.2em;
+    background-color: aliceblue;
+}
+
+div#entrada {
+    font-size: 1.2em;
+    
+}
+
+div#entrada > input#botao {
+    display: block;
+    width: 55vw;
+    padding: 5px;
+    color: rgb(57, 49, 160);
+    border-color: white;
+}
+
+div#entrada > input#txtnu {
+    width: 41vw;
+}
+
+div#saida p {
+    display: inline-block;
+    width: 16.7vw;
+    margin: 4px;
+    background-color: lightblue;
+}
+
+footer > p { 
+    font-style: italic;
+    color: white;
+    margin: 50px;
+    text-align: center;
+}
