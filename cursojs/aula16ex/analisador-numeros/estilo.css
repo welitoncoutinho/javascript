@@ -19,12 +19,9 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.199) ;
 }
 
-select {
-    margin-top: 10px;
-    font-size: 0.9em;
+select{
+    width: 150px;
 }
-
-
 
 footer {
     color: white;

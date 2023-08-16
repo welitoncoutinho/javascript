@@ -12,7 +12,6 @@ function gerar(){
             let m = (n*c)
             item.text = `${n} X ${c} = ${m}`
             re.appendChild(item)
-            
              
         }
     }
