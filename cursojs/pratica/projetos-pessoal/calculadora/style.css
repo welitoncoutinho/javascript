@@ -25,6 +25,8 @@
     background-color: #d9d9d9;
 }
 
+
+
 .btn{
     width: 60px;
     height: 50px;
@@ -34,9 +36,14 @@
     background: var(--colorTeclas);
 }
 
-.btn:active{
-    background: rgb(0, 5, 75);
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
 }
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+ 
+ }
 
 .maior{
     width: 130px;
