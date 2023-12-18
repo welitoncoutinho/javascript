@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Calculadora</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- estilo feito pelo provedor -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <main class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="calculadora">
+                        <input type="text" class="form-control resultado" disabled="disabled" id="display" placeholder="0">
+                        <div class="row">
+                            <button type="button" onclick="calcular('acao', 'c')" class="btn btn-dark btn-lg font-weight-light maior">C</button>
+                            <button type="button" onclick="calcular('acao', '/')" class="btn btn-dark btn-lg font-weight-light">/</button>
+                            <button type="button" onclick="calcular('acao', '*')" class="btn btn-dark btn-lg font-weight-light">X</button>
+                        </div>
+
+                        <div class="row">
+                            <button type="button" onclick="calcular('valor', 7)" class="btn btn-dark btn-lg font-weight-light">7</button>
+                            <button type="button" onclick="calcular('valor', 8)" class="btn btn-dark btn-lg font-weight-light">8</button>
+                            <button type="button" onclick="calcular('valor', 9)" class="btn btn-dark btn-lg font-weight-light">9</button>
+                            <button type="button" onclick="calcular('acao', '-')" class="btn btn-dark btn-lg font-weight-light">-</button>
+                        </div>
+
+                        <div class="row">
+                            <button type="button" onclick="calcular('valor', 4)" class="btn btn-dark btn-lg font-weight-light">4</button>
+                            <button type="button" onclick="calcular('valor', 5)" class="btn btn-dark btn-lg font-weight-light">5</button>
+                            <button type="button" onclick="calcular('valor', 6)" class="btn btn-dark btn-lg font-weight-light">6</button>
+                            <button type="button" onclick="calcular('acao', '+')" class="btn btn-dark btn-lg font-weight-light">+</button>
+                        </div>
+
+                        <div class="row">
+                            
+                            <button type="button" onclick="calcular('valor', 1)" class="btn btn-dark btn-lg font-weight-light">1</button>
+                            <button type="button" onclick="calcular('valor', 2)" class="btn btn-dark btn-lg font-weight-light">2</button>
+                            <button type="button" onclick="calcular('valor', 3)" class="btn btn-dark btn-lg font-weight-light">3</button>
+
+                            <button type="button" onclick="calcular('acao', '=')" class="btn btn-dark btn-lg font-weight-light enter">=</button>
+                            
+                        </div>
+
+                        <div class="row" style="margin-top: -60px;">
+                            <button type="button" onclick="calcular('valor', 0)" class="btn btn-dark btn-lg font-weight-light maior">0</button>
+                            <button type="button" onclick="calcular('acao', '.')" class="btn btn-dark btn-lg font-weight-light">.</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="script.js">
+
+        </script>
+
+        <footer>
+            <!-- place footer here -->
+        </footer>
+    </body>
+</html>
